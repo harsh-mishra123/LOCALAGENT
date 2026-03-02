@@ -2,10 +2,10 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from vector import retriever
 
-model = OllamaLLM(model="llama3.2")
+model = OllamaLLM(model="llama3.2:1b")
 
 template = """
-You are an exeprt in answering questions about a pizza restaurant
+You are an expert in answering questions about a pizza restaurant
 
 Here are some relevant reviews: {reviews}
 
